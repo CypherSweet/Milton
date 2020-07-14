@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<style>
+div {
+  width: 700px;
+  height: 300px;
+  margin: 10px;
+  float: left;
+  padding: 30px;
+}
+
+pre {
+   font-size: 16px;
+   animation: color-change 1.5s infinite;
+}
+
+@keyframes color-change {
+  from {
+        color: rgb(0, 255, 0);
+    }
+    16.6% {
+        color: rgb(255, 255, 0);
+    }
+    33.3% {
+        color: rgb(0, 0, 255);
+    }
+    50% {
+        color: rgb(0, 255, 255);
+    }
+    66.6% {
+        color: rgb(255, 0, 0);
+    }
+    83.3% {
+        color: rgb(255, 0, 255);
+    }
+    to {
+        color: rgb(255, 0, 0);
+    }
+}
+
+</style>
+</head>
+<body style="background-color:black;">
+	
+<div id="look" onmouseenter="shut()" onmouseleave="wake()">
+<pre id="eye" style="animation-play-state:paused">	         		...',;;:cccccccc:;,..
+                            ..,;:cccc::::ccccclloooolc;'.
+                         .',;:::;;;;:loodxk0kkxxkxxdocccc;;'..
+                       .,;;;,,;:coxldKNWWWMMMMWNNWWNNKkdolcccc:,.
+                    .',;;,',;lxo:...dXWMMMMMMMMNkloOXNNNX0koc:coo;.
+                 ..,;:;,,,:ldl'   .kWMMMWXXNWMMMMXd..':d0XWWN0d:;lkd,
+               ..,;;,,'':loc.     lKMMMNl   c0KNWNK:  ..';lx00X0l,cxo,.
+             ..''....'cooc.       c0NMMX;   .l0XWN0;       ,ddx00occl:.
+           ..'..  .':odc.         .x0KKKkolcld000xc.       .cxxxkkdl:,..
+         ..''..   ;dxolc;'         .lxx000kkxx00kc.      .;looolllol:'..
+        ..'..    .':lloolc:,..       'lxkkkkk0kd,   ..':clc:::;,,;:;,'..
+        ......   ....',;;;:ccc::;;,''',:loddol:,,;:clllolc:;;,'........
+            .     ....'''',,,;;:cccccclllloooollllccc:c:::;,'..
+                    .......'',,,,,,,,;;::::ccccc::::;;;,,''...
+                      ...............''',,,;;;,,''''''......
+                           ............................
+</pre>
+</div>
+
+<pre id="open" style="display:none">	         		...',;;:cccccccc:;,..
+                            ..,;:cccc::::ccccclloooolc;'.
+                         .',;:::;;;;:loodxk0kkxxkxxdocccc;;'..
+                       .,;;;,,;:coxldKNWWWMMMMWNNWWNNKkdolcccc:,.
+                    .',;;,',;lxo:...dXWMMMMMMMMNkloOXNNNX0koc:coo;.
+                 ..,;:;,,,:ldl'   .kWMMMWXXNWMMMMXd..':d0XWWN0d:;lkd,
+               ..,;;,,'':loc.     lKMMMNl   c0KNWNK:  ..';lx00X0l,cxo,.
+             ..''....'cooc.       c0NMMX;   .l0XWN0;       ,ddx00occl:.
+           ..'..  .':odc.         .x0KKKkolcld000xc.       .cxxxkkdl:,..
+         ..''..   ;dxolc;'         .lxx000kkxx00kc.      .;looolllol:'..
+        ..'..    .':lloolc:,..       'lxkkkkk0kd,   ..':clc:::;,,;:;,'..
+        ......   ....',;;;:ccc::;;,''',:loddol:,,;:clllolc:;;,'........
+            .     ....'''',,,;;:cccccclllloooollllccc:c:::;,'..
+                    .......'',,,,,,,,;;::::ccccc::::;;;,,''...
+                      ...............''',,,;;;,,''''''......
+                           ............................
+</pre>
+
+<pre id="closing" style="display:none" >
+	                    ...'',;;;;::;;;,'..
+                        ..,;:cloodddxxxkkkkkkkkxol;..
+                     .';codxxkkk000000000000kkkkkkxdoc,..
+                   .,codxk0000000000000000000000000kkxddoc,..
+                .':ldxk00000000000000000000000000000000kkxxol:'
+             .,:ldxkk000000000K000000000000000K0000000000kkxkkx:.
+          ..,coxkk000000000000000kk000000000000000000000000kxxxxl'
+         .,;codxxkk00000000kkk0KK0XNWWWWWWWWWNX0kkkkk00000kkxdool;.
+       .';::ccldk00KKKK00oc;..,x00KNNXXXXXNNX0000000000kkkkkkxoc:,..
+     ..,;,'..,o00000kkxo,       ,lkKKKKKK0K0d,.;ldk000KK0kxxxdoc:'..
+    ..,,'.  .,lk0xxxdol:,..       .,ldddl:,.   .,codkk00kxdollc:,...
+    ..'.......',;:c::cclccc::;,,,',,;::::;,;;:clodddxdol:;::;'......
+       .....  ...''',,,;;;:ccllloooooooooooooolllcccc:;;,....
+                .......'',,,,,,;;;:::ccclllccc:::;;;,''...
+                  ..............'''',,;;;;;,,,''''......
+                       .............................
+</pre>
+
+<pre id="closed" style="display:none" >
+	                  ...'',;;;;;;;,,...
+                       ..,:loxkk000000KKKKKK00xdc,..
+                    .,cox000KXXXXXXXXXXXXXXXXXXXK00xo:,..
+                 ..;lx000KKKKK000000000000000KKKKXXXXK00xl;..
+              ..,:oxk00000000000000000000000000000000KKKKKK0d:.
+           ..;codxkk000kkkkkkkxxxxxxxxxxxxxxxxkkkkkk000000KK0kl'
+         ..;ldxkkkkkkxxxxxddddddddddddddddddddddddxxxxxxkkk000xc.
+       ..,:oxxkkkkkxxxxdddddddddddddddddddddddddddddddddxxkkkkxl;.
+     ..,;codxxkkkxxddddddddddddddddddddddddddddddddxdxxxk000kxdo:..
+    .';::::cldk000kkkxxxxxxdddddddddddddddddddddxxxxxkk0000xkddl;..
+   .';:;,..,ckXXXKKK0KK000kxk0doddxxdddddddxxxxxxkk0000kkkkkxdoc,..
+   .',,''..,:oxxxxxxxkkxkkxk00xxk000000000000KKKKKKK000kxdllll:,..
+    .........',,,:ccllllooooxkxxx000kk0000000000000000kxdoc,'...
+            ......',;;::cc::clllloddoox0xdxxkxxxxddollllc:'.
+                 .....'',,,,,,,;;;;;::cllc::ccc::;;,,,'...
+                     ..................'''..'''......
+</pre>
+
+<script>
+	function shut() {
+		document.getElementById("eye").innerHTML = document.getElementById("closing").innerHTML;
+		setTimeout(function () {
+        document.getElementById("eye").innerHTML = document.getElementById("closed").innerHTML;     
+			}, 80);
+		document.getElementById("eye").setAttribute("style", "animation-play-state:paused");
+		}	
+		
+	function wake() {
+		document.getElementById("eye").innerHTML = document.getElementById("closing").innerHTML;
+		setTimeout(function () {
+        document.getElementById("eye").innerHTML = document.getElementById("open").innerHTML;     
+			}, 80);
+		document.getElementById("eye").setAttribute("style", "animation-play-state:running");
+		}
+</script>
+
+
+</body>
+</html>
